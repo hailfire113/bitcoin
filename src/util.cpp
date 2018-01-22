@@ -82,8 +82,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const BITCOIN_CONF_FILENAME = "bitcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "bitcoind.pid";
+const char * const BITCOIN_CONF_FILENAME = "mlcoin.conf";
+const char * const BITCOIN_PID_FILENAME = "mlcoind.pid";
 const char * const DEFAULT_DEBUGLOGFILE = "debug.log";
 
 ArgsManager gArgs;
@@ -535,7 +535,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bitcoin";
+    const char* pszModule = "mlcoin";
 #endif
     if (pex)
         return strprintf(
@@ -560,7 +560,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bitcoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "MLCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -570,10 +570,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Bitcoin";
+    return pathRet / "Library/Application Support/MLCoin";
 #else
     // Unix
-    return pathRet / ".bitcoin";
+    return pathRet / ".mlcoin";
 #endif
 #endif
 }

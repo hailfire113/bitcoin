@@ -509,8 +509,8 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/bitcoin/bitcoin>";
-    const std::string URL_WEBSITE = "<https://bitcoincore.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/hailfire113/mlcoin>";
+    const std::string URL_WEBSITE = "<https://mlcoin.macler.us>";
 
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2009, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
@@ -808,7 +808,7 @@ void InitLogging()
     fLogIPs = gArgs.GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Bitcoin version %s\n", FormatFullVersion());
+    LogPrintf("MLCoin version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

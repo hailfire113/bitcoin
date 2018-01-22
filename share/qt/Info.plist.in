@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Bitcoin-Qt</string>
+  <string>MLCoin-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Bitcoin-Qt</string>
+  <string>MLCoin-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.bitcoinfoundation.Bitcoin-Qt</string>
+  <string>us.macler.mlcoin.MLCoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.bitcoin.BitcoinPayment</string>
+      <string>us.macler.mlcoin.MLCoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>bitcoin</string>
+        <string>mlcoin</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.bitcoin.paymentrequest</string>
+      <string>us.macler.mlcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Bitcoin payment request</string>
+      <string>MLCoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -71,7 +71,7 @@
         <string>application/x-bitcoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>bitcoinpaymentrequest</string>
+          <string>mlcoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.bitcoin.paymentrequest</string>
+        <string>us.macler.mlcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

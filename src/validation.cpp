@@ -48,7 +48,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Bitcoin cannot be compiled without assertions."
+# error "MlCoin cannot be compiled without assertions."
 #endif
 
 #define MICRO 0.000001
@@ -231,7 +231,7 @@ CTxMemPool mempool(&feeEstimator);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Bitcoin Signed Message:\n";
+const std::string strMessageMagic = "MLCoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1136,7 +1136,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    CAmount nSubsidy = 50 * COIN;
+    CAmount nSubsidy = 75 * COIN;
     // Subsidy is cut in half every 210,000 blocks which will occur approximately every 4 years.
     nSubsidy >>= halvings;
     return nSubsidy;
